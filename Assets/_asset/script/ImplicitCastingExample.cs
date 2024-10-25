@@ -12,12 +12,14 @@ public class ImplicitCastingExample : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //ep kieu ngam dinh(ko mat du lieu)
         // chuyen doi kieu du lieu 
         num = 10;
         floatNum = num; 
         Debug.Log("int to float: " + floatNum);
 
-        floatNum = 10.5f;
+        //ep kieu tuong minh(co the mat du lieu)
+        floatNum = 20.9f;
         num = (int)floatNum;
         Debug.Log("float to int: " + num);
 
